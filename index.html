@@ -1,95 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIMI Agency</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="main-header">
-        <nav class="navbar">
-            <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="MIMI Agency Logo"></a>
-            <ul class="nav-links">
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#portfolio">Proyectos</a></li>
-                <li><a href="#about">Quienes Somos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Bienvenidos a MIMI Agency</h1>
-            <p>Transformamos ideas en experiencias inolvidables</p>
-            <a href="#contact" class="cta-button">Contáctanos</a>
-        </div>
+    <header>
+        <img src="logo.jpg" alt="MIMI Agency Logo" class="logo">
+        <h1>MIMI Agency</h1>
+        <p>Organizamos eventos exclusivos para conectar marcas e influencers</p>
     </header>
-
-    <section id="services" class="services">
-        <h2>Nuestros Servicios</h2>
-        <div class="service-container">
-            <div class="service-item">
-                <h3>Organización de Eventos</h3>
-                <p>Desde pequeños encuentros hasta grandes eventos corporativos.</p>
-            </div>
-            <div class="service-item">
-                <h3>Branding y Diseño</h3>
-                <p>Creación de identidad visual que conecta con tu audiencia.</p>
-            </div>
-            <div class="service-item">
-                <h3>Estrategias Digitales</h3>
-                <p>Impulsa tu presencia online con campañas innovadoras.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio" class="portfolio">
-        <h2>Proyectos Destacados</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="assets/images/project1.jpg" alt="Proyecto 1">
-                <h4>Evento Corporativo</h4>
-            </div>
-            <div class="portfolio-item">
-                <img src="assets/images/project2.jpg" alt="Proyecto 2">
-                <h4>Campaña Publicitaria</h4>
-            </div>
-            <div class="portfolio-item">
-                <img src="assets/images/project3.jpg" alt="Proyecto 3">
-                <h4>Rebranding</h4>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <h2>Quienes Somos</h2>
-        <p>En MIMI Agency, nos apasiona dar vida a tus ideas. Con un equipo creativo y profesional, trabajamos para superar tus expectativas y ofrecer soluciones personalizadas para cada proyecto.</p>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contáctanos</h2>
-        <form action="/send" method="POST">
-            <div class="form-group">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="cta-button">Enviar</button>
-        </form>
-    </section>
-
-    <footer class="main-footer">
-        <p>&copy; 2024 MIMI Agency. Todos los derechos reservados.</p>
+    <nav>
+        <a href="#quienes-somos">Quiénes Somos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <main>
+        <section id="quienes-somos">
+            <h2>Quiénes Somos</h2>
+            <p>Somos una agencia especializada en eventos personalizados con sede en Madrid. Nuestro equipo de expertos crea experiencias memorables basadas en innovación y sostenibilidad.</p>
+        </section>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Organización de eventos exclusivos</li>
+                <li>Conexión entre marcas e influencers</li>
+                <li>Experiencias personalizadas</li>
+                <li>Innovación y sostenibilidad</li>
+            </ul>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Para más información, contáctanos en <a href="mailto:info@mimiagency.com">info@mimiagency.com</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MIMI Agency</p>
     </footer>
-
-    <script src="assets/js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
