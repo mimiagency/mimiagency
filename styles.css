@@ -33,6 +33,14 @@ nav a {
 main {
     padding: 2rem;
 }
+.experiencia {
+    margin-bottom: 2rem;
+}
+.experiencia img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Ajusta la altura máxima de las imágenes de experiencias */
+}
 footer {
     background-color: #333;
     color: #fff;
