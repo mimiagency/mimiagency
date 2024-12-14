@@ -3,6 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F6F4F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     text-align: center;
 }
 header {
@@ -11,34 +16,39 @@ header {
 .logo {
     width: 150px;
     height: auto;
+    animation: fadeIn 2s ease-in-out;
 }
-main {
-    padding: 2rem;
+.tagline {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 0.5rem;
 }
-.servicio {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
+.welcome {
     background-color: #fff;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
 }
-.servicio img {
-    width: 150px;
-    height: auto;
-    margin-right: 1rem;
-    border-radius: 10px;
+nav a {
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px; /* Bordes curvos */
+    transition: background-color 0.3s, transform 0.3s;
 }
-.descripcion {
-    text-align: left;
+nav a:hover {
+    background-color: #555;
+    transform: scale(1.05);
 }
-.descripcion h2 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #333;
-}
-.descripcion p {
-    margin: 0.5rem 0 0;
-    color: #666;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
