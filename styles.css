@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F6F4F0;
+    scroll-behavior: smooth; /* Añade transiciones suaves al desplazarse */
 }
 header {
     background-color: #333;
